@@ -38,7 +38,5 @@ jobs:
         # uses: cloudposse/github-action-docker-build-push@0192482637b94d39a2e76d4b01ab6f626c79e7cc
         uses: cloudposse/github-action-docker-build-push@1.13.1
         with:
-          # Working directory
-          workdir: . # optional, default is ./
           # List of tags (supports https://github.com/docker/metadata-action#tags-input)
           tags: ${{secrets.ACR_NAME}}/contoso-website:latest
