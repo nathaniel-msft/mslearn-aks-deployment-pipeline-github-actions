@@ -1,0 +1,9 @@
+{
+   "name": "<CREDENTIAL-NAME>",
+   "issuer": "https://token.actions.githubusercontent.com",
+   "subject": "repo:<YOUR_USERNAME>/mslearn-aks-deployment-pipeline-github-actions:ref:refs/tags/<YOUR_TAG>",
+   "description": "Testing",
+   "audiences": [
+       "api://AzureADTokenExchange"
+   ]
+}
