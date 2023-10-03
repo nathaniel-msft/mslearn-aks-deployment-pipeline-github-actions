@@ -55,7 +55,7 @@ jobs:
         uses: Azure/aks-set-context@v3
         with:
           resource-group: ${{ secrets.RESOURCE_GROUP }}
-          cluster-name: ${{ secrets.CLUSTER_NAME }}
+          cluster-name: contoso-video
 
       - name: Run Helm Deploy
         run: |
