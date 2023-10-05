@@ -1,9 +1,5 @@
 name: Build and push the latest build to staging
 
-permissions:
-  id-token: write # This is required for requesting the JWT
-  contents: read  # This is required for actions/checkout
-
 on:
   push:
     branches: [ main ]
@@ -35,6 +31,9 @@ jobs:
   deploy:
     runs-on: ubuntu-20.04
     needs: build_push_image
+    permissions:
+      id-token: write # This is required for requesting the JWT
+      contents: read  # This is required for actions/checkout
 
     steps:
       - uses: actions/checkout@v2
